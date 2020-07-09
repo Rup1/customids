@@ -1,7 +1,13 @@
- console.log('running finder')
+
+    console.log('running finder')
     var allElements = document.querySelectorAll('*')
     var documentBody = document.querySelector('body');
     var isLocked = false;
+
+    var runScriptBtn = document.createElement('div');
+    var runScriptBtnText = document.createTextNode('Toggle Id Finder')
+    runScriptBtn.style.cssText('width: 100px; height: 150px; background-color: black; color: white')
+    document.querySelector('header').appendChild(runScriptBtn);
   
     allElements.forEach(element => {
         initialBackgroundColor = element.style.backgroundColor;
@@ -66,3 +72,7 @@
         })
         }
   })
+  
+  
+  
+  
