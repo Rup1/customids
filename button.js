@@ -6,7 +6,7 @@
 
     var runScriptBtn = document.createElement('div');
     var runScriptBtnText = document.createTextNode('Toggle Id Finder')
-    runScriptBtn.style.cssText('width: 100px; height: 150px; background-color: black; color: white')
+    runScriptBtn.style.cssText = 'width: 100px; height: 150px; background-color: black; color: white';
     document.querySelector('header').appendChild(runScriptBtn);
   
     allElements.forEach(element => {
